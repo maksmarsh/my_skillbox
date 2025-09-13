@@ -12,6 +12,7 @@ stages:
 
 
 before-script:
+  script:
     - pip install -r requirements.txt
 
 unittest:
