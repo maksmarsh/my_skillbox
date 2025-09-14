@@ -26,7 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Test with pytest
+      - name: unittest
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
-          pytest tests
+          pytest tests/test.py
