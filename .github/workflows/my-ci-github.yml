@@ -29,4 +29,4 @@ jobs:
       - name: unittest
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
-          pytest tests/
+          pytest practice/tests/
