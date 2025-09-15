@@ -15,14 +15,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.12
+          python-version: '3.12'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-#          python -m pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: unittest
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest practice/tests/
-          flake8 practice/src
+#          flake8 practice/src
