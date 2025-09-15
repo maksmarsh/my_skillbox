@@ -25,4 +25,6 @@ jobs:
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest practice/tests/
+      - name: flake8
+        run: |
           flake8 practice/src
