@@ -25,15 +25,19 @@ jobs:
       - name: unittest
         run: |
           pytest practice/tests/
+          flake8 practice/src/
+          mypy practice/src/
+          black --diff --check practice/src/
+          isort --check-only practice/src/
 #      - name: flake8
 #        run: |
-           flake8 practice/src/
+           # flake8 practice/src/
 #      - name: mypy
 #        run: |
-          mypy practice/src/
+ # mypy practice/src/
 #      - name: black
 #        run: |
-          black --diff --check practice/src/
+          # black --diff --check practice/src/
 #      - name: isort
 #        run: |
-          isort --check-only practice/src/
+          # isort --check-only practice/src/
