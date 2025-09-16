@@ -23,7 +23,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r practice/requirements.txt; fi
       - name: unittest
         run: |
-          export PYTHONPATH=$PYTHONPATH:$(pwd)
+          # export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest practice/tests/
       - name: flake8
         run: |
