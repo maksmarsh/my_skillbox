@@ -57,4 +57,3 @@ def compute_other_thing():
         1 / 0
     except ZeroDivisionError:
         print("OOPS")
-        
