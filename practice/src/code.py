@@ -1,12 +1,12 @@
 """Module with some typical mistakes. They aimed to be find by linters."""
 
-# import multiprocessing
+import multiprocessing
 from typing import Optional
 
 # import flask
 
-# import tempfile
-# import sys
+import tempfile
+import sys
 
 # from third_party import (
 #     lib15,
@@ -33,7 +33,7 @@ class BadClass:
     def get_value(self) -> str:
         return "some_other_value"
 
-    def compute_something(self) -> bool:
+    def compute_something(self) -> None:
         if self.value == 42:
             return True
         else:
@@ -43,7 +43,7 @@ class BadClass:
         return self.other_value
 
 
-def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
+def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> None:
     del beans, eggs
     return spam + spam + spam
 
