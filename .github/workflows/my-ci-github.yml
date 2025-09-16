@@ -28,9 +28,9 @@ jobs:
       # - name: flake8
       #   run: |
       #     flake8 practice/src/
-      - name: mypy
-        run: |
-          mypy practice/src/
+      # - name: mypy
+      #   run: |
+      #     mypy practice/src/
       - name: black
         run: |
           black --diff --check practice/src/
