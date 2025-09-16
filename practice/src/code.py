@@ -47,9 +47,7 @@ def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
     del beans, eggs
     return spam + spam + spam
 
-
-import tempfile
-
+# import tempfile
 
 def compute_other_thing():
     try:
