@@ -49,8 +49,9 @@ def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
 
 # import tempfile
 
+
 def compute_other_thing():
     try:
         1 / 0
     except:
-        print("oops")
+        Exception(print("oops"))
