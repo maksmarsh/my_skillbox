@@ -1,12 +1,12 @@
 """Module with some typical mistakes. They aimed to be find by linters."""
 
-import multiprocessing
+# import multiprocessing
 from typing import Optional
 
 # import flask
 
 # import tempfile
-import sys
+# import sys
 
 # from third_party import (
 #     lib15,
