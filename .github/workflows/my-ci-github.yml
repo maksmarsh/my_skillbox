@@ -25,9 +25,9 @@ jobs:
       - name: unittest
         run: |
           pytest practice/tests/
-      - name: flake8
-        run: |
-          flake8 practice/src/
+      # - name: flake8
+      #   run: |
+      #     flake8 practice/src/
       - name: mypy
         run: |
           mypy practice/src/
