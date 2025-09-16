@@ -43,7 +43,9 @@ class BadClass:
         return self.other_value
 
 
-def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
+def viking_cafe_order(spam: str, 
+                      beans: str, 
+                      eggs: Optional[str] = None) -> str:
     del beans, eggs
     return spam + spam + spam
 
@@ -54,4 +56,4 @@ def compute_other_thing():
     try:
         1 / 0
     except:
-        Exception(print("oops"))
+        ZeroDivisionError()
