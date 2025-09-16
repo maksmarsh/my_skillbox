@@ -49,6 +49,7 @@ def viking_cafe_order(spam: str,
     del beans, eggs
     return spam + spam + spam
 
+
 # import tempfile
 
 
