@@ -38,10 +38,10 @@ class BadClass:
             return True
         else:
             return False
-            
+
     def it_will_fail(self):
         return self.other_value
-        
+
 
 def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
     del beans, eggs
